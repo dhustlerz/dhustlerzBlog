@@ -1,0 +1,701 @@
+/*
+Theme Name: Blogly Lite
+Theme URI: http://themefurnace.com/blog/portfolio/blogly-lite/
+Author: ThemeFurnace
+Author URI: http://themefurnace.com
+Description: Blogly is a responsive personal blog theme which is responsive and uses the theme customizer so you can change colors, upload a logo and background image. You can upgrade to a pro version which has more cutomization options, support and custom widgets for social media, dribbble, flickr and advertising http://themefurnace.com/blog/portfolio/blogly/
+
+Version: 1.0.6
+License: GNU General Public License
+License URI: license.txt
+Tags: gray, black, red, two-columns, custom-background, custom-colors, custom-menu, post-formats, responsive-layout,  featured-images, sticky-post, threaded-comments, translation-ready
+
+Blogly is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+*/
+
+/* Import Reset and Defaults */
+@import url("inc/font-awesome-4.0.3/css/font-awesome.min.css");
+
+/* Import Reset and Defaults */
+@import url("css/defaults.css");
+
+/* Import Widgets */
+@import url("css/widgets.css");
+
+/* Import Right to Left */
+@import url("css/rtl.css");
+/* Links */
+
+
+a {
+	text-decoration: none;
+}
+a:hover, a:focus, a:active {
+	color: #384249;
+}
+.sitetitle a {
+	color:white;
+}
+.sitetitle a:hover {
+	color:white;
+}
+.posttitle a, .posttitle a:visited {
+	color:#BDBDBD;
+}
+.posttitle a:hover {
+	color:#4C4C4C;
+}
+.postmeta a {
+	color:#454545;
+}
+.postmeta a:hover {
+	color:#FF706C
+}
+.postquote a {
+	color:white;
+}
+.postmeta a:hover {
+	color:#FF706C
+}
+#footer a {
+	color:white;
+}
+#footer a:hover {
+	color:#4C4C4C;
+}
+/* Theme Layout */
+#container {
+	overflow:hidden;
+}
+#main {
+	margin-left:22px;
+	margin-top:22px;
+	float:left;
+	width:740px;
+	z-index:4;
+}
+#content {
+	background-color: white;
+	padding:30px;
+	padding-bottom:20px;
+	max-width:990px;
+	margin-top:-140px;
+	overflow:auto;
+}
+#sidebar {
+	background-color: #4C4C4C;
+	width:225px;
+	text-align: center;
+	float: left;
+	color:#DEDEDE;
+	font-size:12px;
+	line-height: 15px;
+	padding-left:150px;
+	margin-bottom: -500000px;
+	padding-bottom: 500000px;
+	overflow:hidden
+}
+.logo {
+	max-width:225px;
+	overflow: hidden;
+	margin-top:20px;
+	margin-bottom:-20px;
+}
+.sitetitle {
+	max-width:225px;
+	margin-top:20px;
+	margin-bottom:10px;
+	font-size:20px;
+	line-height:22px;
+}
+.tagline {
+	margin-left:15px;
+	margin-right:15px;
+	font-size: 12px;
+	line-height:15px;
+	padding-bottom:15px;
+}
+.sidebarwidget {
+	text-align:left;
+	margin-left:5px;
+	margin-right:5px;
+	padding-bottom:15px;
+	margin-bottom:15px;
+	width:180px;
+}
+.sidebarwidget ul {
+	margin:0px;
+	list-style-type:none;
+	margin-left:10px;
+	margin-top:5px;
+}
+ul.sub-menu {
+	margin:0px;
+	list-style-type:none;
+	margin-top:5px;
+	background:none
+}
+ul.sub-menu li a:before {
+	content: "\2014 \a0";
+}
+ul.children {
+	margin:0px;
+	list-style-type:none;
+	margin-top:5px;
+	background:none
+}
+.sidebarwidget li {
+	font-size:12px;
+	margin-bottom:5px;
+}
+.sidebarwidget li a {
+	color:white;
+	display:block;
+	background-color:#808080;
+	padding:7px;
+	width:180px;
+	overflow:hidden;
+}
+
+.sidebarwidget h3 {
+	color:white;
+	display:block;
+	background-color:#646363;
+	padding:7px;
+	width:180px;
+}
+.sidebartitle {
+	color:white;
+	font-size:12px;
+	text-transform: uppercase;
+	margin-left:10px;
+	text-align:center
+}
+/* Post and Post Format Stylings */
+
+
+.post {
+	background-color:white;
+	padding:28px;
+	padding-bottom:5px;
+}
+.post p {
+	color:#4A4A4A;
+	margin-left:0px;
+	font-size:16px;
+	line-height:25px;
+}
+.postmeta {
+	background-color:#F1F1F1;
+	margin-bottom:25px;
+	color:#454545;
+	font-size:12px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform:uppercase;
+	padding:15px;
+	position:relative;
+	padding-right:40px;
+}
+.postmeta p {
+	margin:0px;
+	padding:0px;
+}
+.postmeta i {
+	margin-left:10px;
+	margin-right:10px;
+}
+.postimg {
+	width:100%;
+	height:250px;
+	margin-bottom:20px;
+}
+.postimginside {
+	width:100%;
+	margin-bottom:20px;
+}
+.posttype {
+	background-color:#585858;
+	position:absolute;
+	right:0;
+	bottom:0;
+	height:48px;
+	width:48px;
+	text-align:center;
+	font-size:25px;
+	line-height:45px;
+}
+.posttype:hover {
+	background-color:#373737;
+}
+.posttype i {
+	color:white;
+}
+.format-standard:before {
+	content: "\f08e";
+}
+.format-aside:before {
+	content: "\f040";
+}
+.format-audio:before {
+	content: "\f001";
+}
+.format-chat:before {
+	content: "\f10d";
+}
+.format-gallery:before {
+	content: "\f030";
+}
+.format-image:before {
+	content: "\f030";
+}
+.format-link:before {
+	content: "\f08e";
+}
+.format-quote:before {
+	content: "\f02d";
+}
+.format-status:before {
+	content: "\f081";
+}
+.format-video:before {
+	content: "\f03d";
+}
+.format-standard:before {
+	content: "\f02d";
+}
+.mejs-container {
+	border-top:20px solid #343434 !important;
+	border-bottom:20px solid #343434 !important;
+	margin:0 auto !important;
+	margin-bottom:15px !important;
+}
+.video-player {
+	margin-bottom:15px;
+}
+.quote {
+	padding:38px;
+	padding-bottom:0px;
+	color:white;
+	background-image:url(img/quote-bg.png);
+	background-repeat:repeat;
+	letter-spacing:-0.2px;
+	font-family: 'Open Sans', sans-serif;
+	color:#404040;
+	font-size:25px;
+	line-height:35px;
+	color:white;
+}
+.quote p {
+	color:white;
+	text-align:center
+}
+.quote a, .quote a:visited {
+	color: #384249;
+}
+.quote a:hover {
+	text-decoration:underline;
+}
+.postquote {
+	background-color:#4C4C4C;
+	color:white;
+}
+.chat {
+	padding-bottom:28px;
+}
+/* Chat Posts */
+.chat p {
+	background: #F1F1F1; /* The background color of first paragraph */
+	margin-bottom: 0px;
+	padding:15px;
+}
+.chat p:nth-child(odd) {
+ background: #fff; /* The background color of next paragraph */
+}
+.meta-nav {
+	padding:17px;
+	background-color:#373737;
+	color:white;
+}
+/* Titles */
+.posttitle {
+	color:#BDBDBD;
+	font-size:26px;
+	line-height:35px;
+	margin-top:0px;
+	margin-bottom:15px;
+	padding-right:15px;
+	text-transform:uppercase;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+.page-title {
+	font-size:25px;
+	margin-bottom:30px;
+}
+#reply-title {
+	font-size:25px;
+	margin-left:0px;
+	margin-bottom:30px;
+}
+/* Footer */
+
+#footer {
+	color:white;
+}
+.copy {
+	color:white;
+	margin-top:20px;
+}
+.footerlogo {
+	float:left;
+	margin-right:10px;
+	margin-top:-10px;
+}
+/* Comments */
+
+#comments {
+	background-color:white;
+	padding:28px;
+}
+.comment-notes {
+	font-size:12px;
+}
+.form-allowed-tags {
+	display:none;
+}
+.comment-form-comment textarea {
+	width:70%;
+	clear:both;
+	padding:8px;
+}
+.comment-form-comment label {
+	display:none;
+}
+.commentinfo {
+	font-size: 11px;
+	margin-top:10px;
+}
+.cancelcomment {
+	margin-bottom:10px;
+}
+.loggedinauthor {
+}
+.form-allowed-tags {
+	font-size:11px;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.comment-form-author label {
+	margin-top:10px;
+	font-size:11px;
+	display:block;
+}
+.comment-form-author input {
+	width:50%;
+	padding:8px;
+}
+.comment-form-email label {
+	font-size:11px;
+	display:block;
+}
+.comment-form-email input {
+	width:50%;
+	padding:8px;
+}
+.comment-form-comment label {
+	font-size:11px;
+	display:block;
+}
+.comment-form-comment input {
+	width:50%;
+	padding:8px;
+}
+.comment-form-url label {
+	font-size:11px;
+	display:block;
+}
+.comment-form-url input {
+	width:50%;
+	margin-bottom:20px;
+	padding:8px;
+}
+.edit-link {
+	margin-left:10px;
+	clear:both;
+	display:block;
+}
+.comments {
+	background-color: white;
+	width:100%;
+	margin-top:40px;
+	position:relative;
+	-webkit-box-shadow: 0px 0px 3px 0px #CCCBCB;
+	box-shadow: 0px 0px 3px 0px #CCCBCB;
+	moz-box-shadow: 0px 0px 3px 0px #CCCBCB;
+	margin-left:40px;
+	margin-bottom:40px;
+	padding-bottom:20px;
+	clear:both;
+}
+.comments ol {
+}
+#commentsform {
+	padding-right:10px;
+	position:relative;
+	margin-bottom:0px;
+}
+#comments p {
+}
+.yours {
+	float:right;
+	margin-top:20px;
+}
+.comment {
+	padding-bottom:20px;
+}
+.avatar {
+	float:left;
+	margin-right:10px;
+	padding: 2px;
+	border: 1px solid #C8C8C8;
+}
+.comment-author {
+	font-size: 12px;
+	color:#010101;
+	clear:both;
+}
+.comment-author a {
+	border-bottom:0px;
+	color:#000000;
+}
+.bypostauthor {
+}
+.comment-meta {
+	font-size: 11px;
+}
+.comment-meta a {
+	border-bottom:0px;
+}
+.comment-meta a:visited {
+	border-bottom:0px;
+}
+.comment-body {
+	margin-left:20px;
+}
+.comment-body p {
+	margin-top:10px;
+	line-height:20px;
+	margin-left:47px;
+}
+.comment li {
+	margin-top:20px;
+}
+.comment {
+	list-style-type:none;
+}
+.children ul {
+}
+.depth-1 {
+	margin-top:20px;
+}
+.depth-2 {
+	margin-top:20px;
+	margin-left:10%;
+}
+.depth-3 {
+	margin-top:20px;
+	margin-left:10%;
+}
+#comments .comment:last-child.depth-2 {
+}
+#comments .comment:first-child.depth-2 {
+}
+#comments .comment:last-child.depth-3 {
+}
+.comment-author-admin {
+}
+#comments ul.children {
+}
+.reply {
+	float: right;
+	position:relative;
+	border-bottom:1px solid #ECECEC;
+	width:100%;
+	margin-bottom:25px;
+	padding-bottom:25px;
+	clear:both;
+}
+.comment-reply-link {
+	color: rgba(0, 0, 0, .8);
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	background-color:#FF706C;
+	border:1px solid #FF706C;
+	color:white;
+}
+a.comment-reply-link {
+	float:right
+}
+a.comment-reply-link:visited {
+	color:white;
+}
+a.comment-reply-link:hover {
+	background-color:#4C4C4C;
+	border:1px solid #4C4C4C;
+	color:white;
+}
+.commentinput {
+	width:50%;
+	margin-bottom:20px;
+}
+.commentbox {
+	width:70%;
+	height:150px;
+}
+.commentinfo {
+	font-size: 11px;
+	margin-top:20px;
+}
+.commentsubmit {
+	margin-top:20px;
+	display: block;
+	background-color: #464646;
+	color:white;
+	border:0px;
+	font-size: 11px;
+	padding:5px 15px;
+}
+.commentsubmit:hover {
+	background-color: #5E5E5E;
+	cursor: pointer;
+}
+.cancelcomment {
+	margin-bottom:10px;
+}
+.loggedinauthor {
+}
+/* Pagination */
+
+.page_nav .page-numbers{
+	display:block;
+	float:left;
+	margin: 4px 4px 4px 0;
+	padding:15px 18px 14px 18px;
+	text-decoration:none;
+	width:auto;
+	color:#fff;
+	background-image:url(img/quote-bg.png);
+	background-repeat:repeat;
+}
+
+.page_nav .page-numbers:hover{
+	background: #24221D;
+	color:#fff;
+	text-decoration: none;
+}
+
+.page_nav .current{
+  padding:15px 18px 14px 18px;
+	background: #24221D;
+	color:#fff;
+}
+
+/* Footer */
+
+#footer {
+	font-size:12px;
+	clear:both;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.nav-previous, .nav-next {
+	padding-top:10px;
+	padding-bottom:10px;
+	display:block;
+}
+.footerwidget {
+}
+.footerwidget ul {
+}
+.footerwidget li {
+}
+/* Responsive*/
+
+img {
+	max-width: 100%;
+	height:auto;
+}
+
+/* 1024 Screens */
+@media only screen and (min-width: 1000px) and (max-width: 1249px) {
+ #main {
+ width:700px;
+}
+ #sidebar {
+ padding-left:50px;
+}
+.postimg {
+	height:auto;
+}
+}
+
+
+/* Portrait Tablets */
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+#sidebar {
+ padding-left:30px;
+}
+ #main {
+ width:465px;
+}
+.postimg {
+	height:auto;
+}
+.postimg {
+	height:auto;
+}
+}
+
+
+/*  Portrait Mobiles */
+@media only screen and (max-width: 767px) {
+ #sidebar {
+ width:275px;
+ margin-bottom: 0px;
+ padding-bottom: 30px;
+ padding-left:45px;
+}
+#main {
+ width:285px;
+ float: left;
+ margin:0 auto;
+ text-align:center;
+ margin-left:0px;
+ padding-top:20px;
+ padding-left:20px;
+ text-align: left;
+}
+.postimg {
+	height:auto;
+}
+}
+
+
+/* Landscape Mobiles */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+ #sidebar {
+ width:225px;
+  padding-left:0px;
+}
+ #main {
+ width:300px;
+}
+
+.postimg {
+	height:auto;
+}
+}

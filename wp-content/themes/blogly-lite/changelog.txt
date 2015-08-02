@@ -1,0 +1,19 @@
+Changelog Legend:
+----
+
+[+] = Added
+[*] = Changed
+[^] = Moved
+[=] = No Changes
+[x] = Deleted
+[!] = Bugs
+
+(2014-15-03)
+[*] Tidied code and removed whitespace
+
+(2014-01-28)
+[+] Added right padding for postmeta
+[+] Added default color for links
+
+(2013-12-12)
+Initial Release

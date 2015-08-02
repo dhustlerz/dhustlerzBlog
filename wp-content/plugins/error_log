@@ -1,0 +1,1 @@
+[22-Jun-2015 17:13:04 Etc/GMT] PHP Fatal error:  Call to undefined function add_action() in /home/dhustswk/public_html/blog/wp-content/plugins/hello.php on line 60

@@ -1,0 +1,391 @@
+/* =Widgets
+----------------------------------------------- */
+
+
+/* Search widget */
+.sidebarwidget .search-field {
+	margin-left:10px;
+	margin-top:10px;
+	background-color:#808080;
+	border:0px;
+	color:white;
+	width:180px;
+	padding:7px;
+}
+
+.sidebarwidget .search-field:focus{
+	background-color:#FF706C;
+}
+
+.sidebarwidget .search-submit {
+	margin-left:10px;
+	margin-top:-12px;
+	background-color:#646363;
+	border:0px;
+	color:white;
+	padding:7px;
+	padding-left:12px; 
+	padding-right:12px;
+}
+
+.sidebarwidget .search-submit:hover {
+	background-color:#FF706C;
+	border:0px;
+}
+
+
+/* Text widget */
+.textwidget{
+	margin-top:5px;
+	width:180px;
+	margin-left:10px;
+	padding:7px;
+}
+
+/* Select widget */
+
+.sidebarwidget select {
+	margin-top:10px;
+	margin-left:10px;
+	width:100%
+}
+
+/* Calendar */
+
+#calendar_wrap {
+	margin-top:10px;
+	margin-left:10px;
+	background-color:#808080;
+	width:193px;
+}
+
+
+#wp-calendar {
+	margin:0 auto;
+}
+
+#wp-calendar caption {
+	color: #fff;
+	font-size: 12px;
+	padding-bottom: 4px;
+	margin-bottom:9px;
+	text-align:center;
+	margin-top:10px;
+}
+
+#wp-calendar thead {
+	font-size: 11px;
+	text-align: center;
+}
+
+#wp-calendar thead th {
+	text-align: center;
+	padding: 3px 0 2px;
+}
+
+#wp-calendar tbody {
+	color: #fff;
+}
+
+#wp-calendar tbody td {
+	padding: 3px 0 2px;
+	text-align: center;
+}
+
+#wp-calendar tbody .pad {
+	background: none;
+}
+
+#wp-calendar tfoot #next {
+	text-align: right;
+}
+
+#wp-calendar #prev{
+	padding:7px;
+}
+
+/* TagCloud */
+.tagcloud{
+	overflow:auto;
+	margin-left:10px;
+	margin-top:10px;
+	margin-right:-20px;
+}
+
+.tagcloud a { 	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	padding: .5em 1em .55em;
+	background-color:#FF706C;
+	margin-bottom:5px;
+	margin-right:3px;
+}
+
+.tagcloud a:hover {
+	background: #808080; 
+	-webkit-transition: background-color 1s ease-in-out;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition: background-color 1s ease-in-out;
+	-moz-transition-duration: 0.4s;
+	color:white;	
+	-webkit-transition: color 1s ease-in-out;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition: color 1s ease-in-out;
+	-moz-transition-duration: 0.4s;
+}
+
+.tagcloud a:active {
+	color:white;
+}
+
+.tagged{
+	margin-left:-30px;
+}
+
+/* Advertisement */
+.widget-advertisement:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+/* Dribbble */
+.widget-dribbble:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.dribbble-wrap {
+	height: auto;
+	display:block;
+	margin-top:10px;
+	width:192px;
+	margin-left:10px;
+}
+
+.dribbble-link {
+	background: none;
+	border: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+ .dribbble-link img {
+	border: 0;
+	float: none;
+	height: auto;
+	margin: 0 0 5px;
+	padding: 0;
+	width:280px;
+}
+
+ .dribbble-title {
+	background: none;
+	border: 0;
+	display: block;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.dribbble-date {
+	background: none;
+	border: 0;
+	display: block;
+	font-size: 12px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+
+/* Flickr */
+
+.widget-flickr{
+	margin-left:10px;
+	margin-top:10px;
+	margin-right:-28px;
+	text-align:center;
+}
+.widget-flickr:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.widget-flickr a {
+	background: none;
+	border: 0;
+	padding: 0;     	         
+}
+		
+.widget-flickr img {
+	height: 92px;
+	width: 92px;    
+	float:left;
+	margin-right:7px;
+	margin-bottom:7px;
+}
+
+
+/* Recent Images */
+
+.widget-recent-images{
+	margin-left:10px;
+	margin-top:10px;
+	margin-right:-28px;
+	text-align:center;
+}
+
+.widget-recent-images:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.widget-recent-images a {
+	background: none;
+	border: 0;
+	padding: 0;     	         
+}
+		
+.widget-recent-images img {
+	height: 92px;
+	width: 92px;    
+	float:left;
+	margin-right:7px;
+	margin-bottom:7px;
+}
+
+
+/* Social Media */
+#socialmediawidget {
+	margin-left:10px;
+	margin-top:10px;
+	margin-right:-30px;
+	overflow:auto
+}
+
+.socialicon{
+	width:44px;
+	height:44px;
+	text-align:center;
+	line-height:44px;
+	float:left;
+	display:block;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+
+#socialmediawidget .fa-dribbble{
+	background-color:#C5376D;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-dropbox{
+	background-color:#3482E1;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-facebook{
+	background-color:#3F5C9A;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-flickr{
+	background-color:#FC0080;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-foursquare{
+	background-color:#1DAFEC;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-github{
+	background-color:#2B2B2B;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-google-plus{
+	background-color:#BB3627;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-instagram{
+	background-color:#905F4C;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-linkedin{
+	background-color:#1985BC;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-pinterest{
+	background-color:#CC2027;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-skype{
+	background-color:#7FBA00;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-twitter{
+	background-color:#00B0ED;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-youtube{
+	background-color:#CC181E;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
+#socialmediawidget .fa-rss{
+	background-color:#FA5800;
+	display:block;
+	width:44px;
+	height:44px;
+	line-height:44px;
+}
