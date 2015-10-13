@@ -19,10 +19,10 @@
 define('DB_NAME', 'dhustswk_wp');
 
 /** MySQL database username */
-define('DB_USER', 'dhustswk_wp');
+define('DB_USER', 'dhustswk_jashan');
 
 /** MySQL database password */
-define('DB_PASSWORD', '5D3@6LP(TS');
+define('DB_PASSWORD', 'Aspirine007@');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
