@@ -13,31 +13,44 @@ function rap_collab_admin_actions() {
   add_options_page('rapCollabAdmin','rapCollabAdmin', 'manage_options', '__FILE__', 'rap_collab_admin' );
 }
  function rap_collab_admin() {
+
   $output = '';
   $output .= '<div class="wrap">';
     $output .= '<h4>Rap Collab Admin</h4>';
   $output .= '</div>';
 
-  $output.='<table class=" widefat datatable table table-striped footer">';
+  $output.='<table class="widefat datatable table table-striped footer">';
          $output.='<thead>
          <tr>
-          <th style="width:20%">YouTube</th>
-          <th style="width:20%">Name</th>
-          <th style="width:20%">IP</th>
-          <th style="width:20%">Likes</th>
-          <th style="width:20%">Status</th>
+          <th>YouTube</th>
+          <th>Name</th>
+          <th>IP</th>
+          <th>Likes</th>
+          <th>Status</th>
         </tr>
          </thead>';
 
-        $output.='<tbody  class="font-size-12 schedular-speaker-select">';
-        // filter: using meeting.speakerFilter instead of sourcedata.users.speaker.user
-          $output .= '<tr data-ng-repeat="speaker in meeting.speakerFilter" class="">';
-              $output .= '<td style="width:20%">Link</td>';
-              $output .= '<td style="width:20%">test</td>';
-              $output .= '<td style="width:20%">192.168.1.1</td>';
-              $output .= '<td style="width:20%">500</td>';
-              $output .= '<td style="width:20%">approved</td>';
-          $output .= '</tr>';
+        $output.='<tbody>';
+         global $wpdb;
+
+  $participants = $wpdb->get_results(
+    'SELECT name, email, url, ip, like_count FROM wp_raphunt_2015'
+    );
+  //$results = $wpdb->get_results( 'SELECT * FROM wp_options WHERE option_id = 1', OBJECT );
+  if($participants){
+    echo 'working';
+      }
+
+          foreach ($participants as $participant) {
+              $output .= '<tr>';
+              $output .= '<td>'.$participant->url.'</td>';
+              $output .= '<td>'.$participant->name.'</td>';
+              $output .= '<td>'.$participant->ip.'</td>';
+              $output .= '<td>'.$participant->like_count.'</td>';
+              $output .= '<td>approved</td>';
+              $output .= '</tr>';
+          }
+
         $output.='</tbody>';
 
       $output.='</table>';
