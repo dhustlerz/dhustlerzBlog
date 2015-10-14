@@ -20813,6 +20813,7 @@ Stack trace:
 #1 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(207): WPAL2Int::Request('https://graph.f...', 'access_token=CA...', 'GET')
 #2 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(193): WPAL2Int::Get_fb_info('1', 'me')
 #3 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php( in /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php on line 1918
+<<<<<<< HEAD
 [14-Oct-2015 04:05:02 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Facebook error: Error validating access token: Session does not match current stored session. This may be because the user changed the password since the time the session was created or Facebook has changed the session for security reasons.' in /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php:1918
 Stack trace:
 #0 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(1797): WPAL2Int::Request_cURL('https://graph.f...', 'access_token=CA...', 'GET', 25)
@@ -21066,6 +21067,26 @@ Stack trace:
 #2 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(193): WPAL2Int::Get_fb_info('1', 'me')
 #3 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php( in /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php on line 1918
 [14-Oct-2015 05:03:45 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Facebook error: Error validating access token: Session does not match current stored session. This may be because the user changed the password since the time the session was created or Facebook has changed the session for security reasons.' in /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php:1918
+Stack trace:
+#0 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(1797): WPAL2Int::Request_cURL('https://graph.f...', 'access_token=CA...', 'GET', 25)
+#1 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(207): WPAL2Int::Request('https://graph.f...', 'access_token=CA...', 'GET')
+#2 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(193): WPAL2Int::Get_fb_info('1', 'me')
+#3 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php( in /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php on line 1918
+=======
+>>>>>>> 0fb460b50b1a53818af91f93e3b4f0a06205820d
+[14-Oct-2015 05:21:50 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Facebook error: Error validating access token: Session does not match current stored session. This may be because the user changed the password since the time the session was created or Facebook has changed the session for security reasons.' in /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php:1918
+Stack trace:
+#0 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(1797): WPAL2Int::Request_cURL('https://graph.f...', 'access_token=CA...', 'GET', 25)
+#1 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(207): WPAL2Int::Request('https://graph.f...', 'access_token=CA...', 'GET')
+#2 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(193): WPAL2Int::Get_fb_info('1', 'me')
+#3 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php( in /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php on line 1918
+[14-Oct-2015 05:21:50 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Facebook error: Error validating access token: Session does not match current stored session. This may be because the user changed the password since the time the session was created or Facebook has changed the session for security reasons.' in /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php:1918
+Stack trace:
+#0 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(1797): WPAL2Int::Request_cURL('https://graph.f...', 'access_token=CA...', 'GET', 25)
+#1 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(207): WPAL2Int::Request('https://graph.f...', 'access_token=CA...', 'GET')
+#2 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(193): WPAL2Int::Get_fb_info('1', 'me')
+#3 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php( in /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php on line 1918
+[14-Oct-2015 05:21:58 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Facebook error: Error validating access token: Session does not match current stored session. This may be because the user changed the password since the time the session was created or Facebook has changed the session for security reasons.' in /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php:1918
 Stack trace:
 #0 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(1797): WPAL2Int::Request_cURL('https://graph.f...', 'access_token=CA...', 'GET', 25)
 #1 /home/dhustswk/public_html/blog/wp-content/plugins/add-link-to-facebook/add-link-to-facebook-int.php(207): WPAL2Int::Request('https://graph.f...', 'access_token=CA...', 'GET')
